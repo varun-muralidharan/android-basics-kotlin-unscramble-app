@@ -24,28 +24,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/default_padding"
-        tools:context=".ui.game.GameFragment">
+        tools:context=".ui.game.view.GameFragment">
 
         <Button
-            android:id="@+id/skip"
+            android:id="@+id/negative"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/default_padding"
             android:layout_marginEnd="@dimen/default_padding"
             android:text="@string/skip"
-            app:layout_constraintBaseline_toBaselineOf="@+id/submit"
-            app:layout_constraintEnd_toStartOf="@+id/submit"
+            app:layout_constraintBaseline_toBaselineOf="@+id/positive"
+            app:layout_constraintEnd_toStartOf="@+id/positive"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/positive"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_margin"
             android:text="@string/submit"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/skip"
+            app:layout_constraintStart_toEndOf="@+id/negative"
             app:layout_constraintTop_toBottomOf="@+id/textField" />
 
         <TextView
@@ -103,7 +103,7 @@
             android:hint="@string/enter_your_word"
             app:errorIconDrawable="@drawable/ic_error"
             app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            app:layout_constraintBottom_toTopOf="@+id/submit"
+            app:layout_constraintBottom_toTopOf="@+id/positive"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_instructions">
